@@ -25,9 +25,9 @@ html, body{
   background-color:black;
 }
 
-#switchButton {
+/* #switchButton {
   background-color: white;
-}
+} */
 
 #switchButton .fa-sun{
   display: none;
@@ -44,9 +44,9 @@ html, body{
 }
 
 
-.dark #switchButton{
+/* .dark #switchButton{
   background-color: black;
-}
+} */
 
 .dark #switchButton .fa-sun{
   display: block;
@@ -81,9 +81,24 @@ header {
   gap: 20px;
 }
 
+/* right header content */
+.header__rightContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+
+.btn__switchThemes {
+  background-color: transparent;
+  border: none;
+}
+
 .header__switchTheme .fa-moon,
 .header__switchTheme .fa-sun {
   font-size: 25px;
+  background: none;
 }
 
 /* search box */
@@ -107,6 +122,20 @@ header {
   right: 20px;
   font-size: 15px;
   cursor: pointer;
+}
+
+
+/* button menu navbar */
+
+.header__navBar .navbar .navbar-toggler {
+  outline: none;
+  border: none;
+  background: none;
+  text-align: center;
+  color: white;
+  font-size: 1.95em;
+  font-weight: 700;
+  padding: 8px;
 }
 
 
