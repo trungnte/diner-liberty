@@ -63,7 +63,11 @@ html, body{
 /* HEADER */
 
 header {
-  background-color: orange;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
 }
 
 .header__leftContent h1 a{
@@ -79,6 +83,7 @@ header {
   display: grid;
   grid-template-columns: 4fr 1fr;
   gap: 20px;
+  padding: 40px 0 20px 0;
 }
 
 /* right header content */
@@ -144,6 +149,38 @@ header {
 /* AUTHOR: TRUNG */
 /*  BANNER or CAROUSEL */
 
+.carousel {
+  background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url(../img/banner1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: initial;
+  min-height: 700px;
+}
+
+.carousel__content {
+  max-width: 600px;
+  text-align: left;
+  /* margin-top: 100px; */
+}
+
+/* Button Read More */
+.carousel button {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+
+  padding: 12px 45px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.carousel button:hover{
+  background-color: white;
+  border: 2px solid white;
+  color: #ff6600;
+  text-decoration: none;
+}
 
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: PHUOC NGUYEN */
