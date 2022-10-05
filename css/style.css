@@ -14,9 +14,78 @@ html, body{
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.container {
+  max-width: 1199px;
+  margin: auto;
+}
+
+/* ------------------------------------------------------------------------- */
+/* LIGHT THEME */
+#myBody{
+  background-color:black;
+}
+
+#switchButton {
+  background-color: white;
+}
+
+#switchButton .fa-sun{
+  display: none;
+}
+
+#switchButton .fa-moon {
+  display: block;
+}
+
+/* ------------------------------------------------------------------------- */
+/* DARK THEME */
+.dark#myBody {
+  background-color: white;
+}
+
+
+.dark #switchButton{
+  background-color: black;
+}
+
+.dark #switchButton .fa-sun{
+  display: block;
+  color: white;
+}
+
+.dark #switchButton .fa-moon{
+  display: none;
+}
+
+
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: TRUNG */
 /* HEADER */
+
+header {
+  background-color: orange;
+}
+
+.header__leftContent h1 a{
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* seperate left and right header content with grid */
+.header__content {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 20px;
+}
+
+.header__switchTheme .fa-moon,
+.header__switchTheme .fa-sun {
+  font-size: 25px;
+}
+
 
 
 /* ------------------------------------------------------------------------- */
