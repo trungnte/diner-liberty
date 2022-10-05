@@ -86,6 +86,29 @@ header {
   font-size: 25px;
 }
 
+/* search box */
+.header__searchBox {
+  position: relative;
+  display: flex;
+}
+
+.search__input {
+  padding: 10px 50px 10px 20px;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid white;
+  border-radius: 6px;
+}
+
+.search__icon {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
 
 
 /* ------------------------------------------------------------------------- */
