@@ -19,10 +19,26 @@ html, body{
   margin: auto;
 }
 
+.sectionStyle{
+  padding: 80px 0;
+}
+
+.title h3{
+  font-family: 'Pacifico', cursive;
+  color: #fe6600;
+  font-size: 24px;
+}
+
+.title h2{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
 /* ------------------------------------------------------------------------- */
 /* LIGHT THEME */
 #myBody{
-  background-color:black;
+  background-color:white;
 }
 
 /* #switchButton {
@@ -40,7 +56,7 @@ html, body{
 /* ------------------------------------------------------------------------- */
 /* DARK THEME */
 .dark#myBody {
-  background-color: white;
+  background-color: black;
 }
 
 
@@ -57,6 +73,9 @@ html, body{
   display: none;
 }
 
+.dark .title h2{
+  color: white;
+}
 
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: TRUNG */
@@ -148,8 +167,16 @@ header {
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: PHUOC NGUYEN */
 /* ABOUT US */
+.aboutUs__right p{
+  font-size: 18px;
+  color: #5b606c;
+  font-weight: 300;
+  line-height: 32px;
+}
 
-
+.dark .about_us p{
+  color: white;
+}
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: TRUNG */
 /* AGENT BLOCK */
