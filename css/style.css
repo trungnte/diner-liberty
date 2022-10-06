@@ -23,6 +23,18 @@ html, body{
   padding: 80px 0;
 }
 
+.title h3{
+  font-family: 'Pacifico', cursive;
+  color: #fe6600;
+  font-size: 24px;
+}
+
+.title h2{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
 /* ------------------------------------------------------------------------- */
 /* LIGHT THEME */
 #myBody{
@@ -61,6 +73,9 @@ html, body{
   display: none;
 }
 
+.dark .title h2{
+  color: white;
+}
 
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: TRUNG */
@@ -152,18 +167,6 @@ header {
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: PHUOC NGUYEN */
 /* ABOUT US */
-.aboutUs__left h3{
-  font-family: 'Pacifico', cursive;
-  color: #fe6600;
-  font-size: 24px;
-}
-
-.aboutUs__left h2{
-  font-family: 'Quicksand', sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-}
-
 .aboutUs__right p{
   font-size: 18px;
   color: #5b606c;
@@ -171,7 +174,7 @@ header {
   line-height: 32px;
 }
 
-.dark .about_us h2, .dark .about_us p{
+.dark .about_us p{
   color: white;
 }
 /* ------------------------------------------------------------------------- */
