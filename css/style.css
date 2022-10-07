@@ -17,6 +17,8 @@ html, body{
 .container {
   max-width: 1199px;
   margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .sectionStyle{
@@ -82,7 +84,11 @@ html, body{
 /* HEADER */
 
 header {
-  background-color: orange;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
 }
 
 .header__leftContent h1 a{
@@ -98,6 +104,7 @@ header {
   display: grid;
   grid-template-columns: 4fr 1fr;
   gap: 20px;
+  padding: 40px 0 20px 0;
 }
 
 /* right header content */
@@ -118,6 +125,7 @@ header {
 .header__switchTheme .fa-sun {
   font-size: 25px;
   background: none;
+  color: white;
 }
 
 /* search box */
@@ -157,12 +165,66 @@ header {
   padding: 8px;
 }
 
+.header__navBar .navbar .navbar-toggler-icon {
+  color: white;
+  /* --bs-navbar-toggler-icon-bg: white; */
+}
 
 
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: TRUNG */
 /*  BANNER or CAROUSEL */
 
+.carousel {
+  background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url(../img/banner1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: initial;
+  min-height: 700px;
+}
+
+.carousel__content {
+  max-width: 600px;
+  text-align: left;
+
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  padding-top: 200px;
+}
+
+/* Button Read More */
+.carousel button {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+
+  padding: 12px 45px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+
+  margin-top: 3rem;
+}
+
+.carousel button:hover{
+  background-color: white;
+  border: 2px solid white;
+  color: #ff6600;
+  text-decoration: none;
+}
+
+/* carousel__content font,... */
+.carousel__content h3 {
+  font-size: 44px;
+  line-height: 53px;
+  font-weight: 600;
+}
+
+.carousel__content p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 1.5rem;
+}
 
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: PHUOC NGUYEN */
