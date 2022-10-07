@@ -17,6 +17,8 @@ html, body{
 .container {
   max-width: 1199px;
   margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -104,6 +106,7 @@ header {
 .header__switchTheme .fa-sun {
   font-size: 25px;
   background: none;
+  color: white;
 }
 
 /* search box */
@@ -143,6 +146,10 @@ header {
   padding: 8px;
 }
 
+.header__navBar .navbar .navbar-toggler-icon {
+  color: white;
+  /* --bs-navbar-toggler-icon-bg: white; */
+}
 
 
 /* ------------------------------------------------------------------------- */
@@ -160,7 +167,10 @@ header {
 .carousel__content {
   max-width: 600px;
   text-align: left;
-  /* margin-top: 100px; */
+
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  padding-top: 200px;
 }
 
 /* Button Read More */
@@ -173,6 +183,8 @@ header {
   font-size: 16px;
   line-height: 30px;
   font-weight: 700;
+
+  margin-top: 3rem;
 }
 
 .carousel button:hover{
@@ -180,6 +192,19 @@ header {
   border: 2px solid white;
   color: #ff6600;
   text-decoration: none;
+}
+
+/* carousel__content font,... */
+.carousel__content h3 {
+  font-size: 44px;
+  line-height: 53px;
+  font-weight: 600;
+}
+
+.carousel__content p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 1.5rem;
 }
 
 /* ------------------------------------------------------------------------- */
