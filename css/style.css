@@ -246,7 +246,95 @@ header {
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: TRUNG */
 /* AGENT BLOCK */
+.agents {
+  background: #ff6600;
+  
+}
 
+.agents .agent__no__margin {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.agents__img {
+  background: url(../img/banner3.jpg);
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+
+  min-height: 600px;
+  position: relative;
+  z-index: 1;
+}
+.agents__img::before{
+  content: "";
+  background: rgb(16 15 19 / 46%);
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.agents__title {
+  color: white;
+  font-size: 20px;
+  font-weight:400;
+  line-height: 30px;
+  letter-spacing: 1px;
+  display: block;
+  font-family: 'Pacifico', cursive;
+}
+
+.agents__title2 {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+  color: black;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.agents__p{
+  color: #ffdfc9;
+}
+
+.agents__subcribe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.agents__icon {
+  background: white;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  border-radius: 6px;
+  transition: 0.3s ease-in-out;
+}
+
+.agents__icon span {
+  color: #ff6600;
+  font-size: 25px;
+  line-height: 70px;
+}
+
+.agents__items a {
+  display: block;
+  color: #232121;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.agents__items p {
+  color: #ffdfc9;
+  font-size: 18px;
+  line-height: 28px;
+}
 
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: PHUOC NGUYEN */
