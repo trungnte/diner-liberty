@@ -305,6 +305,10 @@ header {
   gap: 30px;
 }
 
+.agents__items:hover .agents__icon span{
+  color: #ffc600;
+}
+
 .agents__icon {
   background: white;
   width: 70px;
