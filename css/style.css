@@ -404,9 +404,82 @@ header {
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: TRUNG */
 /* HOME SERVICES - FOOD */
+.services__items {
+  padding: 40px 40px;
+  border-radius: 8px;
+  box-shadow: 0 25px 98px 0 rgb(0 0 0 / 3%);
+  background-color: white;
+  position: relative;
+  border: 1px solid #eee;
+}
 
+.services__items:hover {
+  box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
+  transition: 0.3s ease-in-out;
+}
 
+.services__items:hover .services__icon {
+  background-color: #ff6600;
+}
 
+.services__items:hover .services__icon span {
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.services__items:hover .services__info h4 a {
+  color: #ff6600;
+}
+
+.services__titles {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 30px;
+}
+
+.services__icon {
+  background: #8273fc0d;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  border-radius: 6px;
+  transition: 0.3s ease-in-out;
+}
+
+.services__icon span {
+  color: #ff6600;
+  font-size: 25px;
+  line-height: 70px;
+}
+
+.services__info p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #161c2db3;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.services__info h4 {
+  font-size: 1.5rem;
+}
+
+.services__info h4 a {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  display: block;
+  color: #232121;
+  cursor: pointer;
+}
+
+.services__items p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #161c2db3;
+  font-family: 'Quicksand', sans-serif;
+}
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: PHUOC NGUYEN */
 /* DELICIOUSNESS - CONTACT US */
