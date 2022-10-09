@@ -410,7 +410,67 @@ header {
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: PHUOC NGUYEN */
 /* DELICIOUSNESS - CONTACT US */
+.contactUs{
+  background-image: url(../img/banner2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
 
+.contactUs::after{
+  content: "";
+  color: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(16, 15, 19, 0.66);
+  z-index: -1;
+}
+
+.contactUs__spacing{
+  padding-bottom: 80px;
+}
+
+.contactUs_text h2{
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  max-width: 650px;
+  margin: auto;
+}
+
+.contactUs__button button{
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 60px;
+  transition: all .5s;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.contactUs__button button:first-of-type{
+  border: 2px solid white;
+  background-color: transparent;
+}
+
+.contactUs__button button:first-of-type:hover{
+  background-color: white;
+  color: #fe6600;
+}
+
+.contactUs__button button:last-of-type{
+  background-color: #fe6600;
+  border: 2px solid #fe6600;
+} 
+
+.contactUs__button button:last-of-type:hover{
+  opacity: 0.80;
+}
 
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: TRUNG */
@@ -440,3 +500,9 @@ header {
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: PHUOC NGUYEN */
 /* FOOTER */
+
+@media screen and (max-width: 992px){
+    .contactUs__spacing{
+        padding-bottom: 0;
+    }
+}
