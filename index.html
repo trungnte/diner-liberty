@@ -22,6 +22,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
+  <!-- Magnific Popup core CSS file -->
+  <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="./css/style.css">
 
@@ -132,8 +135,11 @@
         </div>
         <div class="col-12 col-lg-7">
           <div class="aboutUs__right pe-4">
-            <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum init dolor sit, amet elit. Dolor ipsum non velit, culpa!Lorem ipsum init dolor sit.</p>
-            <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel.
+              Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum init
+              dolor sit, amet elit. Dolor ipsum non velit, culpa!Lorem ipsum init dolor sit.</p>
+            <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel.
+              Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
       </div>
@@ -155,7 +161,8 @@
           <div class="agents__content p-md-5 p-3">
             <h6 class="agents__title">More than 3000 Restaurants</h6>
             <h3 class="agents__title2">Book a table easly at the best price</h3>
-            <p class="agents__p my-3">Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.</p>
+            <p class="agents__p my-3">Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis. Integer
+              sit amet mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.</p>
             <div class="agents__subcribe mt-5">
               <div class="agents__items">
                 <div class="agents__icon mb-4">
@@ -338,7 +345,7 @@
             <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
           </div>
         </div>
-        
+
         <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
           <div class="services__items">
             <div class="services__titles">
@@ -355,7 +362,7 @@
             <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
           </div>
         </div>
-        
+
         <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
           <div class="services__items">
             <div class="services__titles">
@@ -372,7 +379,7 @@
             <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
           </div>
         </div>
-        
+
         <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
           <div class="services__items">
             <div class="services__titles">
@@ -402,7 +409,7 @@
         <h2>Deliciousness jumping into the mouth.</h2>
       </div>
       <div class="contactUs__button">
-        <button class="me-lg-3">Read More 
+        <button class="me-lg-3">Read More
           <i class="fa fa-chevron-right ml-2"></i>
         </button>
         <button class="ms-lg-3">Contact Us
@@ -420,7 +427,23 @@
 
   <!-- AUTHOR: TRUNG -->
   <!-- VIDEOS -->
-  <section class="videos"></section>
+  <section class="videos">
+    <div class="container py-lg-5">
+      <div class="videos__info">
+        <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center pl-3">
+          <span class="video-play-icon">
+            <span class="fa fa-play"></span>
+          </span>
+        </a>
+        <div id="small-dialog" class="videos__source w3ls_small_dialog wthree_pop mfp-hide">
+          <iframe src="https://player.vimeo.com/video/305185528?h=195bf3cba0" width="640" height="360" frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          <!-- <p><a href="https://vimeo.com/305185528">FOOD</a> from <a href="https://vimeo.com/fedemartirene">Fede
+              Martiren&eacute;</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <!-- AUTHOR: TRUNG -->
@@ -447,11 +470,22 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
   </script>
 
+  <!-- Magnific Popup core JS file -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
   <!-- Switch themes dark and light -->
   <script>
     document.getElementById("switchButton").onclick = function () {
       document.getElementById("myBody").classList.toggle("dark");
     }
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $('.image-link').magnificPopup({
+        type: 'image'
+      });
+    });
   </script>
 
 </body>

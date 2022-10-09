@@ -554,9 +554,54 @@ header {
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: TRUNG */
 /* VIDEOS */
+.videos__info {
+  background: url(../img/banner3.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 500px;
+  align-items: center;
+  display: grid;
+  border-radius: 6px;
 
+  position: relative;
+  z-index: 1;
+}
 
+.videos__info::before {
+  content: "";
+  background: rgb(16 15 19 / 60%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100%;
+  z-index: -1;
+  border-radius: 6px;
+}
 
+.play-view {
+  left: 0;
+  right: 0;
+  top: calc(50% - 40px);
+}
+
+.videos__info span.video-play-icon{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  font-size: 26px;
+  padding-left: 2px;
+  text-align: center;
+  line-height: 76px;
+
+  border-radius: 50%;
+  border: transparent;
+
+  color: #ff6600;
+  background: white;
+
+  transition: 0.3s ease-in-out;
+  animation: ripple 1s linear infinite;
+}
 
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: TRUNG */
