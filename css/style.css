@@ -554,6 +554,9 @@ header {
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: TRUNG */
 /* VIDEOS */
+.videos {
+  display: block;
+}
 .videos__info {
   background: url(../img/banner3.jpg) no-repeat center;
   background-size: cover;
@@ -582,6 +585,8 @@ header {
   left: 0;
   right: 0;
   top: calc(50% - 40px);
+  /* position: absolute; */
+  /* z-index: 1; */
 }
 
 .videos__info span.video-play-icon{
@@ -603,6 +608,21 @@ header {
   animation: ripple 1s linear infinite;
 }
 
+#small-dialog {
+  max-width: 750px;
+  margin: 40px auto;
+  position: relative;
+  /* display: none; */
+}
+
+#small-dialog iframe {
+  width: 100%;
+  height: 420px;
+  display: block;
+  border-radius: 10px;
+  border: none;
+}
+
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: TRUNG */
 /* BLOGS */
@@ -622,5 +642,16 @@ header {
 @media screen and (max-width: 992px){
     .contactUs__spacing{
         padding-bottom: 0;
+    }
+}
+
+/* ------------------------------------------------------------------------- */
+/* keyframe */
+@keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgb(255 255 255 / 25%), 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
+    }
+    100% {
+      box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgb(50 100 245 / 0%);
     }
 }

@@ -23,7 +23,7 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
   <!-- Magnific Popup core CSS file -->
-  <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+  <link rel="stylesheet" href="./css/magnific-popup.css">
 
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="./css/style.css">
@@ -435,11 +435,12 @@
             <span class="fa fa-play"></span>
           </span>
         </a>
-        <div id="small-dialog" class="videos__source w3ls_small_dialog wthree_pop mfp-hide">
-          <iframe src="https://player.vimeo.com/video/305185528?h=195bf3cba0" width="640" height="360" frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-          <!-- <p><a href="https://vimeo.com/305185528">FOOD</a> from <a href="https://vimeo.com/fedemartirene">Fede
-              Martiren&eacute;</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
+        <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+          <div class="agileits_modal_body">
+            <iframe src="https://player.vimeo.com/video/305185528" frameborder="0"
+              allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+
         </div>
       </div>
     </div>
@@ -482,11 +483,21 @@
 
   <script>
     $(document).ready(function () {
-      $('.image-link').magnificPopup({
-        type: 'image'
+      $(".popup-with-zoom-anim").magnificPopup({
+        type: "inline",
+        fixedContentPos: false,
+        fixedBgPos: true,
+        overflowY: "auto",
+        closeBtnInside: true,
+        preloader: false,
+        midClick: true,
+        removalDelay: 300,
+        mainClass: "my-mfp-zoom-in"
       });
     });
   </script>
+
+
 
 </body>
 
