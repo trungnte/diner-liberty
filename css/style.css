@@ -836,6 +836,35 @@ footer a:hover{
   opacity: 0.80;
 }
 
+/* AUTHOR: PHUOC NGUYEN */
+/* BACKTOTOP */
+.backToTop{
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 50%;
+  background-color: #fe6600;
+  border: 1px solid #eee;
+  color: white;
+  font-size: 24px;
+  bottom: 20px;
+  right: 20px;
+  position: fixed;
+  opacity: 0;
+}
+
+.backToTop:hover{
+  background-color: white;
+  color: #fe6600;
+  border: 1px solid #fe6600;
+}
+
+.cd-top--is-visible { 
+      opacity: 1;
+}
+
+
 @media screen and (max-width: 992px){
     .contactUs__spacing{
         padding-bottom: 0;
