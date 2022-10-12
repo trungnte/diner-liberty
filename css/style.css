@@ -401,6 +401,10 @@ header {
   font-size: 18px;
 }
 
+.dark .categories{
+  background-color: #282828;
+}
+
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: TRUNG */
 /* HOME SERVICES - FOOD */
@@ -587,6 +591,14 @@ header {
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   color: #5b606c;
+}
+
+.dark .numbers__item{
+  background-color: #000000;
+}
+
+.dark .numbers__item p{
+  color: white;
 }
 
 /* ------------------------------------------------------------------------- */
