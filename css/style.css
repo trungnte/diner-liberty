@@ -240,6 +240,10 @@ header {
   line-height: 32px;
 }
 
+.dark .about_us{
+  background-color: #232220;
+}
+
 .dark .about_us p{
   color: white;
 }
@@ -683,7 +687,59 @@ header {
 /* AUTHOR: PHUOC NGUYEN */
 /* TESTIMONIALS */
 
+.testimonials__content{
+  max-width: 750px;
+  margin: auto;
+}
 
+.testimonials__img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.testimonitals__commentTitle h3{
+  font-style: italic;
+}
+
+.testimonitals__commentTitle i{
+  color: #fe6600;
+  font-size: 28px;
+  font-style: italic;
+}
+
+.testimonials__comment{
+  font-family: 'Quicksand', sans-serif;
+  color: #5b606c;
+  font-size: 18px;
+}
+
+.testimonials__comment p:first-of-type{
+  line-height: 31px;
+}
+
+.testimonials__comment h3{
+  color: #232121;
+}
+
+.testimonials .owl-theme .owl-dots .owl-dot.active span{
+  background: #fe6600;
+}
+
+.testimonials .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+  background: #fe6600;
+}
+
+.dark .testimonials{
+  background-color: #232220;
+}
+
+.dark .testimonials__content p, .dark .testimonials__content h3{
+  color: white;
+}
 
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: PHUOC NGUYEN */
