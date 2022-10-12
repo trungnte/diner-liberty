@@ -25,6 +25,10 @@
   <!-- Magnific Popup core CSS file -->
   <link rel="stylesheet" href="./css/magnific-popup.css">
 
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="./css/style.css">
 
@@ -489,7 +493,82 @@
 
   <!-- AUTHOR: PHUOC NGUYEN -->
   <!-- TESTIMONIALS -->
-  <section class="testimonials"></section>
+  <section class="testimonials sectionStyle text-center">
+    <div class="container">
+      <div class="title pb-5">
+        <h3>Testimonials</h3>
+        <h2>What People Say</h2>
+      </div>
+      <div class="testimonials__content">
+      <div class="owl-carousel owl-theme ">
+        <div class="item testimonials__item">
+          <div class="testimonials__img">
+            <img src="./img/team1.jpg" alt="">
+          </div>
+          <div class="testimonitals__commentTitle">
+            <p><i class="fa-solid fa-quote-left"></i></p>
+            <h3>OMG! I cannot believe. It's Awesome"</h3>
+          </div>
+          <div class="testimonials__comment">
+          <p>My new site is so much faster and easier to work with than my old site. They are here to
+            help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+            Pellen tesque libero ut justo, ultrices in ligula.</p>
+              <h3>Johnson william</h3>
+              <p>Customer</p>
+            </div>
+        </div>
+        <div class="item testimonials__item">
+          <div class="testimonials__img">
+            <img src="./img/team2.jpg" alt="">
+          </div>
+          <div class="testimonitals__commentTitle">
+            <p><i class="fa-solid fa-quote-left"></i></p>
+            <h3>Simply the best. Better than all the rest."</h3>
+          </div>
+          <div class="testimonials__comment">
+          <p>My new site is so much faster and easier to work with than my old site. They are here to
+            help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+            Pellen tesque libero ut justo, ultrices in ligula.</p>
+              <h3>Alexander sakura</h3>
+              <p>Customer</p>
+            </div>
+        </div>
+        <div class="item testimonials__item">
+          <div class="testimonials__img">
+            <img src="./img/team3.jpg" alt="">
+          </div>
+          <div class="testimonitals__commentTitle">
+            <p><i class="fa-solid fa-quote-left"></i></p>
+            <h3>OMG! I cannot believe. It's Awesome"</h3>
+          </div>
+          <div class="testimonials__comment">
+          <p>My new site is so much faster and easier to work with than my old site. They are here to
+            help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+            Pellen tesque libero ut justo, ultrices in ligula.</p>
+              <h3>John wilson</h3>
+              <p>Customer</p>
+            </div>
+        </div>
+        <div class="item testimonials__item">
+          <div class="testimonials__img">
+            <img src="./img/team4.jpg" alt="">
+          </div>
+          <div class="testimonitals__commentTitle">
+            <p><i class="fa-solid fa-quote-left"></i></p>
+            <h3>OMG! I cannot believe. It's Awesome"</h3>
+          </div>
+          <div class="testimonials__comment">
+          <p>My new site is so much faster and easier to work with than my old site. They are here to
+            help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+            Pellen tesque libero ut justo, ultrices in ligula.</p>
+              <h3>Julia sakura</h3>
+              <p>Customer</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
 
 
   <!-- AUTHOR: PHUOC NGUYEN -->
@@ -545,6 +624,20 @@
 });
   </script>
 
+  <!-- Owl Carousel -->
+  <script src="./js/owl.carousel.min.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        }
+    }
+})
+  </script>
 </body>
 
 </html>
