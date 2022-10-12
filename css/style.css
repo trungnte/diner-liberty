@@ -401,6 +401,10 @@ header {
   font-size: 18px;
 }
 
+.dark .categories{
+  background-color: #282828;
+}
+
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: TRUNG */
 /* HOME SERVICES - FOOD */
@@ -546,10 +550,56 @@ header {
 }
 
 /* ------------------------------------------------------------------------- */
-/* AUTHOR: TRUNG */
+/* AUTHOR:  PHUOC NGUYEN*/
 /* NUMBERS */
+.numbers{
+  margin: -70px 0 50px 0;
+  position: relative;
+  z-index: 2;
+}
 
+.numbers__item{
+  padding: 36px 20px;
+  box-shadow: 1px 1px 5px 0 rgb(1 1 1 / 5%)  ;
+  border-radius: 5px;
+  background-color: white;
+  transition: all .5s;
+}
 
+.numbers__item:hover{
+  transform: translateY(-10px);
+  box-shadow: rgb(71 63 79 / 16%) 0px 5px 10px;
+}
+
+.numbers__item i{
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
+  color: white;
+  font-size: 26px;
+  background-color: #fe6600;
+  border-radius: 50%;
+}
+
+.numbers__item p:first-of-type{
+  font-size: 40px;
+  font-weight: 700;
+  margin: 20px 0 0 0;
+}
+
+.numbers__item p:last-of-type{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: #5b606c;
+}
+
+.dark .numbers__item{
+  background-color: #000000;
+}
+
+.dark .numbers__item p{
+  color: white;
+}
 
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: TRUNG */
@@ -643,6 +693,10 @@ header {
     .contactUs__spacing{
         padding-bottom: 0;
     }
+
+    .numbers{
+      margin-top: 30px;
+  }
 }
 
 /* ------------------------------------------------------------------------- */
