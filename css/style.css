@@ -687,11 +687,6 @@ header {
 /* AUTHOR: PHUOC NGUYEN */
 /* TESTIMONIALS */
 
-.testimonials__content{
-  max-width: 750px;
-  margin: auto;
-}
-
 .testimonials__img{
   width: 80px;
   height: 80px;
@@ -719,6 +714,8 @@ header {
 
 .testimonials__comment p:first-of-type{
   line-height: 31px;
+  max-width: 750px;
+  margin: auto;
 }
 
 .testimonials__comment h3{
@@ -744,6 +741,100 @@ header {
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: PHUOC NGUYEN */
 /* FOOTER */
+footer{
+  background-color: black;
+}
+
+footer ul{
+  list-style: none;
+  padding: 0;
+}
+
+footer a, footer p{
+  color: #a4a2a0;
+  font-size: 16px;
+}
+
+footer a:hover{
+  color: #fe6600;
+}
+
+.footer__content{
+  padding: 70px 0;
+}
+
+.footer__list h2, .footer__form h2{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.footer__text{
+  padding-right: 25px;
+}
+
+.footer__text p{
+  line-height: 28px;
+}
+
+.footer__text i{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: white;
+  color: #fe6600;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.footer__text i:hover{
+  background-color: #fe6600;
+  color: white;
+}
+
+.footer__list li{
+  padding: 6px 0;
+}
+
+.footer__form{
+  height: 100%;
+}
+
+.footer__form form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60%;
+}
+
+.footer__form input{
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.footer__form input:focus{
+  outline: none;
+  border: 1px solid #fe6600;
+}
+
+.footer__form button{
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px;
+  transition: all .5s;
+  border-radius: 5px;
+  color: white;
+  background-color: #fe6600;
+  border: 2px solid #fe6600;
+  cursor: pointer;
+}
+
+.footer__form button:last-of-type:hover{
+  opacity: 0.80;
+}
 
 @media screen and (max-width: 992px){
     .contactUs__spacing{
@@ -753,6 +844,15 @@ header {
     .numbers{
       margin-top: 30px;
   }
+}
+
+.footer__bottom span{
+  color: #fe6600;
+}
+
+.footer__bottom li {
+  display: inline;
+  margin-right: 20px;
 }
 
 /* ------------------------------------------------------------------------- */
