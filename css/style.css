@@ -852,6 +852,7 @@ footer a:hover{
   right: 20px;
   position: fixed;
   opacity: 0;
+  z-index: 10;
 }
 
 .backToTop:hover{
