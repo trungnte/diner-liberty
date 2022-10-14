@@ -79,6 +79,14 @@ a, a:hover{
   display: none;
 }
 
+.dark .search__input{
+  background-color: #232220;
+}
+
+.dark .search__icon{
+  color: white;
+}
+
 .dark .title h2{
   color: white;
 }
@@ -180,9 +188,7 @@ header {
   cursor: pointer;
 }
 
-.dark .search__input{
-  background-color: #232220;
-}
+
 /* button menu navbar */
 
 .header__navBar .navbar .navbar-toggler {
