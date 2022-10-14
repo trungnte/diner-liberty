@@ -83,6 +83,26 @@ a{
   color: white;
 }
 
+.dark .blogs__header h3{
+  color: white;
+}
+
+.dark .blogs__desc {
+  color: #eee;
+}
+
+.dark .blogs__descDetail{
+  color: #c2d0da;
+}
+
+
+.dark .blogs__footerInfo a{
+  color:  #eee;
+}
+.dark .blogs__footer a{
+  color:  #eee;
+}
+
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: TRUNG */
 /* HEADER */
@@ -691,9 +711,6 @@ header {
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: TRUNG */
 /* BLOGS */
-.blogs {
-  background: #f7f7f7;
-}
 
 .blogs__header h6 {
   font-size: 20px;
@@ -780,7 +797,8 @@ header {
   min-height: 1px;
 }
 
-.blogs__cardBody .blogs__desc{
+/* .blogs__cardBody .blogs__desc{ */
+.blogs__desc{
   display: block;
   font-size: 24px;
   line-height: 34px;
@@ -790,8 +808,11 @@ header {
   margin-top: 25px;
   margin-bottom: 15px;
 
+  text-decoration: none;
+
   transition: .3s ease;
 }
+
 
 .blogs__cardBody p {
   font-size: 18px;
@@ -815,7 +836,8 @@ header {
   justify-content: flex-start;
 }
 
-.blogs__cardBody  .blogs__footer .blogs__footerInfo a {
+/* .blogs__cardBody  .blogs__footer .blogs__footerInfo a { */
+.blogs__footerInfo a {
   font-weight: 700;
   color: #232121;
   letter-spacing: .02em;
@@ -830,7 +852,9 @@ header {
   max-width: 100%;
 }
 
-.blogs__cardBody  .blogs__footer .blogs__footerRead {
+/* .blogs__cardBody  .blogs__footer .blogs__footerRead { */
+
+.blogs__footerRead {
   text-transform: capitalize;
   font-size: 16px;
   font-weight: 700;
