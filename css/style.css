@@ -968,12 +968,15 @@ footer a:hover{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 60%;
+  height: 55%;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .footer__form input{
   padding: 1em;
+  border: 1px solid #000;
   border-radius: 5px;
+  font-size: 18px;
 }
 
 .footer__form input:focus{
