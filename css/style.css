@@ -37,7 +37,7 @@ html, body{
   font-weight: 700;
 }
 
-a{
+a, a:hover{
   text-decoration: none;
 }
 
@@ -88,6 +88,10 @@ a{
 }
 
 .dark .blogs__desc {
+  color: #eee;
+}
+
+.dark .blogs__desc:hover{
   color: #eee;
 }
 
@@ -797,7 +801,6 @@ header {
   min-height: 1px;
 }
 
-/* .blogs__cardBody .blogs__desc{ */
 .blogs__desc{
   display: block;
   font-size: 24px;
@@ -808,11 +811,14 @@ header {
   margin-top: 25px;
   margin-bottom: 15px;
 
-  text-decoration: none;
-
   transition: .3s ease;
 }
 
+.blogs__desc,
+.blogs__desc:hover {
+  text-decoration: none;
+  color: #232121;
+}
 
 .blogs__cardBody p {
   font-size: 18px;
