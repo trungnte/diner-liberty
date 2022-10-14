@@ -62,7 +62,7 @@ a{
 /* ------------------------------------------------------------------------- */
 /* DARK THEME */
 .dark#myBody {
-  background-color: black;
+  background-color: #232220;
 }
 
 
@@ -143,8 +143,9 @@ header {
   height: 45px;
   font-size: 16px;
   font-weight: 400;
-  border: 1px solid white;
+  border: 1px solid #232220;
   border-radius: 6px;
+  outline: none;
 }
 
 .search__icon {
@@ -155,7 +156,9 @@ header {
   cursor: pointer;
 }
 
-
+.dark .search__input{
+  background-color: #232220;
+}
 /* button menu navbar */
 
 .header__navBar .navbar .navbar-toggler {
@@ -266,7 +269,7 @@ header {
   background-position: center;
   align-items: center;
 
-  min-height: 600px;
+  height: 100%;
   position: relative;
   z-index: 1;
 }
@@ -488,6 +491,14 @@ header {
   color: #161c2db3;
   font-family: 'Quicksand', sans-serif;
 }
+
+.dark .services__items{
+  background-color: #232220;
+}
+
+.dark .services__items p, .dark .services__info a{
+  color: white;
+}
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: PHUOC NGUYEN */
 /* DELICIOUSNESS - CONTACT US */
@@ -598,7 +609,7 @@ header {
 }
 
 .dark .numbers__item{
-  background-color: #000000;
+  background-color: #232220;
 }
 
 .dark .numbers__item p{
@@ -957,12 +968,15 @@ footer a:hover{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 60%;
+  height: 55%;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .footer__form input{
   padding: 1em;
+  border: 1px solid #000;
   border-radius: 5px;
+  font-size: 18px;
 }
 
 .footer__form input:focus{
@@ -1002,6 +1016,7 @@ footer a:hover{
   right: 20px;
   position: fixed;
   opacity: 0;
+  z-index: 10;
 }
 
 .backToTop:hover{
