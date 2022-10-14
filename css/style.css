@@ -207,6 +207,10 @@ header {
   /* --bs-navbar-toggler-icon-bg: white; */
 }
 
+.navbar-nav .nav-link.active,
+.nav-link {
+  color: white;
+}
 
 /* ------------------------------------------------------------------------- */
 /* AUTHOR: TRUNG */
