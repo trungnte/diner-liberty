@@ -148,13 +148,17 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  align-items: center;
+  /* align-items: center; */
 }
 
 
 .btn__switchThemes {
   background-color: transparent;
   border: none;
+  /* align-items: center; */
+
+  height: 45px;
+  padding-left: 15px;
 }
 
 .header__switchTheme .fa-moon,
@@ -190,6 +194,9 @@ header {
 
 
 /* button menu navbar */
+.header__navBar .navbar {
+  --bs-navbar-padding-y: 0.25rem;
+}
 
 .header__navBar .navbar .navbar-toggler {
   outline: none;
@@ -199,7 +206,7 @@ header {
   color: white;
   font-size: 1.95em;
   font-weight: 700;
-  padding: 8px;
+  /* padding: 8px; */
 }
 
 .header__navBar .navbar .navbar-toggler-icon {
