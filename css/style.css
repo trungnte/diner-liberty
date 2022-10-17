@@ -91,10 +91,6 @@ a, a:hover{
   color: white;
 }
 
-.dark .blogs__header h3{
-  color: white;
-}
-
 .dark .blogs__desc {
   color: #eee;
 }
@@ -113,6 +109,10 @@ a, a:hover{
 }
 .dark .blogs__footer a{
   color:  #eee;
+}
+
+.dark .blogs{
+  background-color: #282828;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -179,7 +179,7 @@ header {
   height: 45px;
   font-size: 16px;
   font-weight: 400;
-  border: 1px solid #232220;
+  border: none;
   border-radius: 6px;
   outline: none;
 }
@@ -309,7 +309,7 @@ header {
   background-size: cover;
   background-position: center;
   align-items: center;
-
+  min-height: 600px;
   height: 100%;
   position: relative;
   z-index: 1;
@@ -733,22 +733,6 @@ header {
 /* AUTHOR: TRUNG */
 /* BLOGS */
 
-.blogs__header h6 {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 1px;
-  color: #fe6600;
-  display: block;
-  font-family: 'Pacifico', cursive;
-}
-
-.blogs__header h3 {
-  font-size: 38px;
-  line-height: 48px;
-  font-weight: 600;
-}
-
 .blogs__card {
   position: relative;
   word-wrap: break-word;
@@ -1076,15 +1060,36 @@ footer a:hover{
       opacity: 1;
 }
 
+@media screen and (max-width: 1200px){
+    .container{
+      max-width: 960px;
+    }
+}
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 991.98px){
     .contactUs__spacing{
         padding-bottom: 0;
     }
 
     .numbers{
       margin-top: 30px;
-  }
+    }
+
+    .container{
+      max-width: 720px;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .container{
+      max-width: 540px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .search__input, .search__icon{
+      display: none;
+    }
 }
 
 .footer__bottom span{
@@ -1094,7 +1099,7 @@ footer a:hover{
 .footer__bottom li {
   display: inline;
   margin-right: 20px;
-}
+} 
 
 /* ------------------------------------------------------------------------- */
 /* keyframe */
